@@ -1,0 +1,6 @@
+
+1. Does preprocessing affect the result of the model? Why?
+ - Preprocessing significantly impacts the K-means clustering results by ensuring fair and accurate cluster assignments. Through feature scaling with StandardScaler(), we prevent features with larger magnitudes (like Price and Landsize) from dominating the clustering process, while missing value imputation using SimpleImputer maintains data integrity by preventing the loss of valuable data points and ensuring accurate distance calculations. Without these preprocessing steps, the model would produce biased results that prioritize features with larger scales and potentially exclude important data points due to missing values.
+
+2. What is your conclusion based on the interpretation or result of your model?
+ - The K-means clustering analysis revealed four distinct segments in the Melbourne housing market, as determined by the elbow method visualization. Our model successfully identified different property categories characterized by their combinations of price, size, and location features.
